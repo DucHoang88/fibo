@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="sotien">
+    <select name="" id="luachon1">
+        <option value="a">vnd</option>
+        <option value="b">usd</option>
+    </select>
+    <select name="" id="luachon2">
+        <option value="a">vnd</option>
+        <option value="b">usd</option>
+    </select>
+    <button onclick="chuyen()">chuyển đổi</button>
+    <h1 id="rs"></h1><br>
+    số tiền sau khi chuyển đổi
+    <script>
+        function chuyen() {
+            let sotiennhap = document.getElementById("sotien").value;
+            let luachon1 = document.getElementById("luachon1").value;
+            let luachon2 = document.getElementById("luachon2").value;
+            let rs ="";
+            if (luachon1 == luachon2) {
+                rs = sotiennhap;
+            }
+            if (luachon1=="a"&&luachon2=="b"){
+                rs = sotiennhap/24000;
+            }
+            
+            document.getElementById("rs").innerHTML = rs
+        }
+
+
+
+    </script>
+</body>
+
+</html>

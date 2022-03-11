@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    chiều cao:
+    <input type="text" id="ts1">
+    cân nặng:
+    <input type="text" id="ts2">
+    <button onclick="tinh()">tính</button>
+    <h1> KP là:</h1>
+    <p id="bmi"></p>
+    <script>
+
+
+        function tinh() {
+            let a = +document.getElementById("ts1").value;
+            let b = +document.getElementById("ts2").value;
+            let bmi = a / (b * b)
+            if (bmi < 18.5) {
+                kq = "gầy";
+            }
+            if (bmi > 18.5 && c < 24.9)
+                kq = "bt";
+             document.getElementById("bmi").innerHTML = kq
+        }
+        
+
+    </script>
+
+
+</body>
+
+</html>

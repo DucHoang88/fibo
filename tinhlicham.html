@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="munber" id="text">
+    <button onclick="tinh()">kiểm tra</button>
+    <p id = "rs" id = "ch"></p>
+    
+    
+    <script>
+        function tinh() {
+            let nam = +document.getElementById("text").value;
+            let can = nam % 10;
+            let chi = nam% 12;
+            
+            if (can == 0) {
+                document.getElementById("rs").innerHTML = "canh"
+            }
+            if (can ==1){
+                document.getElementById("rs").innerHTML = "tân"
+            }
+            if (can ==2){
+                document.getElementById("rs").innerHTML = "Nhâm"
+            }
+            if (can ==3){
+                document.getElementById("rs").innerHTML = "Quý"
+            }
+            if (can ==4){
+                document.getElementById("rs").innerHTML = "giáp"
+            }
+            if (can ==5){
+                document.getElementById("rs").innerHTML = "ất"
+            }
+            if (can ==6){
+                document.getElementById("rs").innerHTML = "bính"
+            }
+            if (can ==7){
+                document.getElementById("rs").innerHTML = "đinh"
+            }
+            if (can ==8){
+                document.getElementById("rs").innerHTML = "mậu "
+            }
+            if (can ==9){
+                document.getElementById("rs").innerHTML = "kỷ"
+            }
+            if (chi==0){
+                document.getElementById("ch").innerHTML = "thân"
+            }
+            if (chi==1){
+                document.getElementById("ch").innerHTML = "dậu"
+            }
+            if (chi==2){
+                document.getElementById("ch").innerHTML = "tuất"
+            }
+            if (chi==3){
+                document.getElementById("ch").innerHTML = "hợi"
+            }
+            if (chi==4){
+                document.getElementById("ch").innerHTML = "tý"
+            }
+            if (chi==5){
+                document.getElementById("ch").innerHTML = "sửu"
+            }
+            if (chi==6){
+                document.getElementById("ch").innerHTML = "dần"
+            }
+            if (chi==7){
+                document.getElementById("ch").innerHTML = "mão"
+            }
+            if (chi==8){
+                document.getElementById("ch").innerHTML = "thìn"
+            }
+            if (chi==9){
+                document.getElementById("ch").innerHTML = "tỵ"
+            }
+            if (chi==10){
+                document.getElementById("ch").innerHTML = "ngọ"
+            }
+           if (chi==11){
+                document.getElementById("ch").innerHTML = "mùi"
+            }
+        }    
+    </script>
+
+</body>
+
+</html>

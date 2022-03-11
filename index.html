@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        tên của bạn:
+        <input type="text" id="st1">
+        
+        nơi ở của bạn:
+        <input type="text" id="st2">
+        
+        tuổi:
+        <input type="text" id="st3">
+
+        <button onclick="tinh()">cộng</button>
+        <button onclick="g()">trừ</button>
+        <button onclick="th()">nhân</button>
+        <button onclick="tgh()">chia</button>
+
+
+       
+        <h1><p>kết quả là</p></h1>
+        <p id="kq"></p>
+    
+    <script>
+        function tinh() {
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            let c = +document.getElementById("st3").value;
+            
+            document.getElementById("kq").innerHTML = a + b + c
+
+
+        }
+        function g(){
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            let c = +document.getElementById("st3").value;
+            
+            document.getElementById("kq").innerHTML = a-b-c
+        }
+        function th(){
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            let c = +document.getElementById("st3").value;
+            
+            document.getElementById("kq").innerHTML = a*b*c
+        }
+        function tgh(){
+            let a = +document.getElementById("st1").value;
+            let b = +document.getElementById("st2").value;
+            let c = +document.getElementById("st3").value;
+            
+            document.getElementById("kq").innerHTML = a/b/c
+        }
+    </script>
+
+</body>
+
+</html>
